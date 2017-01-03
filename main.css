@@ -1,0 +1,54 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+.tabComponent {
+  box-shadow: 0 2px 15px 2px;
+  position: absolute;
+  height: 25%;
+  font-size: 1.6rem;
+}
+
+.tabComponent [type=radio] {
+  display: none;
+}
+
+label {
+  display: inline-block;
+  font-weight: bold;
+  text-align: center;
+  background-color: rgb(0, 0, 0);
+  color: #FFCC99;
+  width: 15rem;
+  height: auto;
+  padding: 1rem 0;
+  transition: background-color 0.35s;
+
+}
+
+label:hover {
+  background-color: #663333;
+  cursor: pointer;
+}
+
+.content {
+  position: absolute;
+  top: 5rem;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #ffffff;
+  padding: 2rem;
+  display: none;
+}
+
+.tabComponent [type=radio]:checked + label {
+  background-color: #CC3300;
+  color: #FFCC99;
+  cursor: default;
+}
+
+.tabComponent [type=radio]:checked + label + .content {
+  display: inline-block;
+}
