@@ -4,7 +4,7 @@ html {
 }
 
 .tabComponent {
-  box-shadow: 0 2px 15px 2px;
+  box-shadow: 0 1px 1px 0px;
   position: absolute;
   height: 25%;
   font-size: 1.6rem;
